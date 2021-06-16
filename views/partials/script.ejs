@@ -1,0 +1,16 @@
+<script>
+    var navbr= document.querySelector('.navbar');
+    var btn= document.querySelector('.fa-bars');
+
+    btn.addEventListener('click',function(){
+        var value=navbr.classList.contains('nav-bar');
+        if(value){
+            navbr.classList.remove('nav-bar');
+        }
+        else{
+            navbr.classList.add('nav-bar');
+        }
+    });
+
+    
+</script>

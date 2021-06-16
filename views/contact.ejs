@@ -1,0 +1,20 @@
+<%- include('./partials/header.ejs') %>
+<body>
+<%- include('./partials/navbar.ejs') %>
+<h1 style="margin: 30px 20%; font-size: 40px; text-transform: capitalize;">contact us</h1>
+<form class="contactus">
+<label for="username">Email  : </label>
+<input type="email" name="username" placeholder="Enter your email">
+<br>
+<br>
+<br>
+
+<label for="number">number :</label>
+<input type="text" name="number" placeholder="Enter phone number">
+<p>What you are looking for?</p>
+<textarea name="query about?" cols="30" rows="10" placeholder="enter your query?..."></textarea>
+<button type="submit">submit</button>
+</form>
+<%- include('./partials/script.ejs') %>
+</body>
+</html>

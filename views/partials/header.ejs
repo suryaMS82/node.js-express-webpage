@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>educademy app</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    *{
+        margin:0px;
+    padding:0px;
+    box-sizing: border-box; 
+    }
+body{
+    background-color:rgb(213, 217, 219);
+}
+.headerbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: gray;
+    width: 100%;
+    border-bottom: 2px solid rgb(173, 172, 172);
+
+}
+h2{
+    color:rgb(233, 96, 72);
+    font-size: 35px;
+    margin-top: 0.4rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    padding-left: 3%;
+    text-decoration: none;
+
+}
+h2 a{
+    text-decoration: none;
+    color:rgb(233, 96, 72);
+
+}
+.fa-qrcode{
+    color:rgb(41, 41, 197);
+}
+.fa-bars{
+    font-size:30px;
+    color:rgb(43, 43, 190);
+    margin-top: 7px;
+    margin-right:20px;
+    cursor: pointer;
+}
+.fa-bars:hover{
+    color:red;
+    transform: scale(120%);
+    margin-top: 10px;
+    transition: all 0.7s;
+}
+.navbar{
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(194, 190, 190);
+    transition: all 2s ease;
+    height: 0px;
+    overflow: hidden;
+}
+.nav-bar{
+    height: 180px;
+    
+}
+.un-list{
+    list-style: none;
+    padding: 0.5rem 1.2rem;
+
+}
+.un-list li{
+    padding-top: 1rem;
+}
+
+.un-list a{
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: white;
+}
+.un-list li:hover{
+    background-color: rgb(163, 157, 157);
+    width: 100%;
+    padding-left: 0.5rem;
+    transition: all 1.2s ease;
+}
+.un-list li:hover a{
+    color: rgb(65, 94, 156);
+}
+.content{
+    margin: 5rem 2rem 0rem 2rem;
+}
+.content h1{
+color: tomato;
+font-size: 35px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.content p{
+    margin: 1rem 0rem 0rem 4rem;
+    width: 70%;
+    font-size: 20px;
+    color:black;
+}
+.content p big{
+    color: blue;
+}
+.login-box{
+    width: 250px;
+    height: 300px;
+    background-color: black;
+    position: absolute;
+    top: 30%;
+    left: 35%;
+}
+.login-box h1{
+    color:white;
+    position: absolute;
+    transform: translate(50%, -50%);
+    left: 25%;
+    padding: 15px 20px;
+    border-radius: 50%;
+    background-color:#ff0000;
+}
+.login-box h1 .fa-user{
+    font-size:45px;
+}
+.login-box h2{
+    color: white;
+    margin-top:40px;
+    text-transform: capitalize;
+    margin-left: 70px;
+
+}
+.logindetails{
+    margin: 20px 0 0 10px;
+    width: 100%;
+
+}
+.login-box p{
+    color: white;
+    font-style:bold;
+    font-size: 18px;
+    padding-bottom: 3px;
+
+}
+.logindetails input{
+    width: 90%;
+    margin-bottom: 10px;
+    border: none;
+}
+
+ input[type="text" ], input[type="password"]{
+     font-size: 14px;
+     outline: none;
+     border-bottom: 1px solid rgb(202, 48, 48);
+     background-color:rgb(189, 183, 183);
+     background: transparent;
+     color:gainsboro;
+}
+button{
+    border: none;
+    outline: none;
+    width: 90%;
+    background-color:#d11e1e;
+    font-size: 22px;
+    font-family: bold;
+    text-transform:capitalize;
+    margin: 10px 0px 10px 0px;
+    cursor: pointer;
+    border-radius: 12px;
+
+}
+.links{
+    display: block;
+    margin:5px 20px 10px 20px;
+
+
+}
+.links a{
+    display: block;
+    text-decoration: none;
+    color: darkgray;
+    margin-bottom: 5px;
+}
+.links a:hover{
+    color: darkred;
+}
+.contentss{
+     margin:10%;
+ }
+ .contentss h1{
+color: black;
+font-size: 40px;
+text-transform: capitalize;
+  
+ }
+ .contentss p{
+     color: grey;
+     width: 90%;
+     font-size:20px;
+ }
+ .usss h1{
+    margin: 30% 10% 0% 40%;
+    font-size: 40px;
+    text-transform: capitalize;
+}
+.contactus {
+    margin: 3% 20% 0% 20%;
+  
+}
+.contactus label{
+color:grey;
+font-size: 20px;
+}
+.contactus input{
+    outline: none;
+    font-size: 16px;
+    width: 250px;
+    background: transparent;
+}
+.contactus p{
+margin:10px 10px 5px 0px;
+font-size: 18px;
+}
+.contactus textarea{
+width: 330px;
+outline: none;
+background-color: rgb(175, 167, 167);
+background: transparent;
+
+}
+.contactus button{
+border: none;
+outline: none;
+width: 35%;
+display: block;
+margin-top: 10px;
+background-color:tomato;
+font-size: 20px;
+color:black;
+cursor: pointer;
+text-transform:capitalize;
+}
+.error{
+        margin: 10%;
+    }
+    .error h1{
+        color:red;
+
+    }
+    .error h2{
+        color: black;
+        
+    }
+    .programs{
+    margin: 10%;
+}
+.programs h1{
+color: darkred;
+font-size:40px;
+border-bottom: 2px solid grey;
+margin-bottom: 10px;
+padding-bottom: 5px;
+}
+.programs h2{
+    margin:10px 10px 10px 0px;
+    font-size:30px;
+    color: black;
+    margin-left: 0px;
+}
+.programs p{
+    font-size: 18px;
+    color: grey;
+    width: 90%;
+}
+
+</style>
+
+</head>
